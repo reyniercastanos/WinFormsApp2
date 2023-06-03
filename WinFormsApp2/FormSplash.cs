@@ -12,9 +12,18 @@ namespace WinFormsApp2
 {
     public partial class FormSplash : Form
     {
+        
         public FormSplash()
         {
             InitializeComponent();
         }
+
+        public string Password { get; private set; }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Password = textBox1.Text;  
+            Close();
+        }
     }
+   
 }

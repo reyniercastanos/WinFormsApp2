@@ -16,6 +16,9 @@ namespace WinFormsApp2
         {
             var splashform = new FormSplash();
             splashform.ShowDialog();
+            var password = splashform.Password;
+            if (password != "a")
+                Close();
         }
     }
 }
